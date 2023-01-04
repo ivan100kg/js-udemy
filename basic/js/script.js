@@ -15,7 +15,7 @@ console.log(obj);
 
 let x=1, y=1;
 console.log(1+ x++);
-console.log(1+ ++y);
+console.log(1+ (++y));
 
 console.log(true&&true);
 console.log(true&&false);
