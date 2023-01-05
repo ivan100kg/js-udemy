@@ -2,15 +2,15 @@
 
 let answer;
 let movieCounter = 0;
-while(true) {
+while (true) {
     answer = prompt("One of the last watched movie?", '');
-    if(answer === '' || answer.length > 50){
+    if (answer === '' || answer.length > 50) {
         console.log('wrong answer!');
         continue;
     } else {
         movieCounter++;
     }
-    if(answer === 'q') {
+    if (answer === 'q') {
         break;
     }
 }

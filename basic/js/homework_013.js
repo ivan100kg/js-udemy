@@ -11,7 +11,7 @@ personalMovieDB.privat = false;
 
 let lastMovie;
 let lastMovieRank;
-for(let i = 3; i>0; i--){
+for (let i = 3; i > 0; i--) {
     lastMovie = prompt("One of the last watched movie?", "");
     lastMovieRank = +prompt(`Rank of ${lastMovie}?`, 0);
     personalMovieDB.movies[lastMovie] = lastMovieRank;
