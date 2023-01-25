@@ -28,6 +28,7 @@ document.querySelector('.promo__adv').remove();
 document.querySelector('.promo__genre').textContent = 'ДРАМА';
 document.querySelector('.promo__bg').style.backgroundImage = 'url("../project/img/bg.jpg")';
 const movies = document.querySelectorAll('.promo__interactive-item');
+movieDB.movies.sort();
 for(let i = 0; i < movies.length; i++) {
     movies[i].textContent = `${i}. ${movieDB.movies[i]}`;
 }
