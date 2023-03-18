@@ -17,34 +17,56 @@ button.addEventListener('click', () => {
 // });
 
 
-const button2 = document.querySelector('#btn2');
-button2.addEventListener('click', lengthOfLongestSubstring);
-function lengthOfLongestSubstring() {
-    let s = 'aab';
-    let result = '';
-    let maxLength = 0;
+// const button2 = document.querySelector('#btn2');
+// button2.addEventListener('click', lengthOfLongestSubstring);
+// function lengthOfLongestSubstring() {
+//     let s = 'aab';
+//     let result = '';
+//     let maxLength = 0;
 
-    console.log(s);
-    for (let i = 0; i < s.length; i++) {
-        console.log('char = ' + s[i]);
-            console.log('index i = ' + i);
-        if (result.includes(s[i])) {
-            result += s[i];
-            result = result.substring(result.indexOf(s[i]) + 1, result.length);
-            console.log('substring result = ' + result);
-            console.log('maxLength = ' + maxLength);
-            console.log('result.length = ' + result.length);
-        } else {
-            result += s[i];
-            if (result.length > maxLength) {
-                maxLength = result.length;
-                console.log('result = ' + result);
-                console.log('maxLength = ' + maxLength);
-                console.log('result.length = ' + result.length);
-            }
-        }
+//     console.log(s);
+//     for (let i = 0; i < s.length; i++) {
+//         console.log('char = ' + s[i]);
+//             console.log('index i = ' + i);
+//         if (result.includes(s[i])) {
+//             result += s[i];
+//             result = result.substring(result.indexOf(s[i]) + 1, result.length);
+//             console.log('substring result = ' + result);
+//             console.log('maxLength = ' + maxLength);
+//             console.log('result.length = ' + result.length);
+//         } else {
+//             result += s[i];
+//             if (result.length > maxLength) {
+//                 maxLength = result.length;
+//                 console.log('result = ' + result);
+//                 console.log('maxLength = ' + maxLength);
+//                 console.log('result.length = ' + result.length);
+//             }
+//         }
+//     }
+//     // return maxLength;
+
+//     console.log('maxLength = ' + maxLength);
+// }
+
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
     }
-    // return maxLength;
 
-    console.log('maxLength = ' + maxLength);
-};
+    calsArea() {
+        return this.height * this.width;
+    }
+}
+
+class ColoredRect extends Rectangle {
+    constructor(height, width, color) {
+        super(height, width);
+        this.color = color;
+    }
+}
+
+const square = new Rectangle(12,13);
+console.log(square.calsArea());
+const colored = new ColoredRect(10,10,'blue');
