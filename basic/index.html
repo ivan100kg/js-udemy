@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
@@ -16,8 +17,8 @@
                     <li>
                         <button class="btn btn-primary"id="btn1">click me1</button>
                     </li>
-                    <li><button class="btn" id="btn2">click me2</button></li>
-                    <li><button class="btn" id="btn3">click me3</button></li>
+                    <li><button data-close class="btn" id="btn2">click me2</button></li>
+                    <li><button data-modal ="" class="btn" id="btn3">modal</button></li>
                 </ul>
             </div>
         </div>
@@ -28,7 +29,19 @@
             </div>
             <div class="content__body">
                 <div class="content__left">
-                    <div class="content__ltext"></div>
+                    <div class="modal">
+                        <div class="modal__dialog">
+                            <div class="modal__content">
+                                <form action="#">
+                                    <div class="modal__close">&times;</div>
+                                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="content__right">
                     <div class="content__rtext"></div>
@@ -45,7 +58,7 @@
     <!-- <script src="js/dom.js"></script> -->
     <!-- <script src="js/oop.js"></script> -->
     <!-- <script src="js/events.js"></script> -->
-    <script src="js/class.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
