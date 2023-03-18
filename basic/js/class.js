@@ -58,6 +58,15 @@ class Rectangle {
     calsArea() {
         return this.height * this.width;
     }
+
+    render() {
+        const div = document.createElement('div');
+        div.style.width = this.width;
+        div.style.height = this.height;
+        div.style.backgroundColor = 'red';
+        div.textContent = 'Hello blya!';
+        document.body.prepend(div);
+    }
 }
 
 class ColoredRect extends Rectangle {
@@ -70,3 +79,4 @@ class ColoredRect extends Rectangle {
 const square = new Rectangle(12,13);
 console.log(square.calsArea());
 const colored = new ColoredRect(10,10,'blue');
+colored.render();
