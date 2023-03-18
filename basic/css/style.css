@@ -8,6 +8,7 @@
 
 /* Модальный (фон) */
 .modal {
+    display: none;
     position: fixed; /* Оставаться на месте */
     width: 200;
     height: 200;

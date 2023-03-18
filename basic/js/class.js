@@ -76,7 +76,13 @@ class ColoredRect extends Rectangle {
     }
 }
 
+
+
 const square = new Rectangle(12,13);
 console.log(square.calsArea());
 const colored = new ColoredRect(10,10,'blue');
 colored.render();
+
+const log = function(a,b, ...rest) {
+    console.log(a,b,rest);
+};
