@@ -1,1 +1,1 @@
-(()=>{"use strict";var o={367:o=>{o.exports=function(){this.hello=function(){console.log("hello!")},this.bye=function(){console.log("bye!")}}}},e={};function t(n){var r=e[n];if(void 0!==r)return r.exports;var s=e[n]={exports:{}};return o[n](s,s.exports,t),s.exports}(()=>{const o=new(t(367));console.log(o.hello())})()})();
+(()=>{"use strict";console.log("1 2"),console.log("Hi")})();
